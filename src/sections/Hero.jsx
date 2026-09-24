@@ -31,24 +31,34 @@ const Hero = () => {
             experiences.
           </p>
 
-          {/* Buttons */}
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <a
-              href="#work"
-              className="inline-flex min-h-13 items-center justify-center gap-2 rounded-full bg-[#f5f1e8] px-7 font-bold text-black transition hover:-translate-y-1 hover:bg-[#d8ff52]"
-            >
-              Explore My Work
-              <FiArrowDownRight size={18} />
-            </a>
+
+          <div className="mt-10 flex flex-wrap gap-4">
+           <a
+  href="#work"
+  
+  className="inline-flex min-h-14 items-center justify-center rounded-full border border-white/20 px-8 font-bold text-white transition duration-300 hover:border-[#d8ff52] hover:text-[#d8ff52]"
+>
+  View My Work
+</a>
 
             <a
-              href="#services"
-              className="inline-flex min-h-13 items-center justify-center gap-2 rounded-full border border-white/15 px-7 font-bold text-white transition hover:border-white hover:bg-white/5"
+              href="/Rekha-Resume.pdf"
+              download="Rekha-Resume.pdf"
+              className="inline-flex min-h-14 items-center justify-center rounded-full border border-white/20 px-8 font-bold text-white transition duration-300 hover:border-[#d8ff52] hover:text-[#d8ff52]"
             >
-              View Services
-              <FiArrowRight size={17} />
+              Download Resume
             </a>
           </div>
+
+
+
+
+
+
+
+
+
+
 
           {/* Statistics */}
           <div className="mt-12 grid max-w-xl grid-cols-3 gap-4 border-t border-white/10 pt-7">
@@ -72,10 +82,10 @@ const Hero = () => {
 
             <div>
               <strong className="block text-2xl font-black text-white">
-                360°
+                Digital + Print
               </strong>
               <span className="mt-1 block text-xs leading-5 text-gray-500">
-                Creative thinking
+                Design Expertise
               </span>
             </div>
           </div>

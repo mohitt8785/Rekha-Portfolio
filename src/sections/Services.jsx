@@ -26,9 +26,9 @@ const Services = () => {
           </h2>
 
           <p className="max-w-xl text-base leading-7 text-gray-600 sm:text-lg">
-            A flexible design skill set for brands, marketing campaigns,
-            creators, and growing businesses.
-          </p>
+  Professional design solutions for brands, businesses, and creators—from
+  visual identity and marketing materials to digital experiences.
+</p>
         </div>
 
         {/* Services List */}

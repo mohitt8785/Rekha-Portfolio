@@ -1,57 +1,57 @@
 export const services = [
   {
     id: 1,
-    title: "Social Media Posts",
+    title: "Social Media Design",
     description:
-      "Creative social media designs for campaigns, promotions, announcements, and brand engagement.",
+      "Engaging social media posts and campaign creatives designed to strengthen brand presence across digital platforms.",
   },
   {
     id: 2,
     title: "Posters & Banners",
     description:
-      "Eye-catching digital and print posters designed with clear messaging and strong visual hierarchy.",
+      "Creative posters, promotional banners, flex designs, and advertising materials for digital and print campaigns.",
   },
   {
     id: 3,
     title: "Logo Design",
     description:
-      "Distinctive logo concepts that communicate the personality and purpose of a brand.",
+      "Distinctive and memorable logo designs that communicate a brand’s personality, values, and purpose.",
   },
   {
     id: 4,
     title: "Brand Identity",
     description:
-      "Consistent visual systems including colours, typography, logo usage, and supporting brand elements.",
+      "Consistent visual identity systems including colours, typography, brand elements, and creative guidelines.",
   },
   {
     id: 5,
     title: "Business Cards",
     description:
-      "Clean and professional business card designs prepared for both digital use and printing.",
+      "Professional business card designs that present your brand clearly and leave a strong first impression.",
   },
   {
     id: 6,
     title: "Brochures & Flyers",
     description:
-      "Well-structured marketing materials that present information clearly and attractively.",
+      "Well-structured brochures, flyers, and marketing materials that communicate information effectively.",
   },
   {
     id: 7,
     title: "Packaging Design",
     description:
-      "Product packaging concepts that combine brand identity, clarity, and shelf appeal.",
+      "Creative and practical packaging designs that help products stand out while maintaining brand consistency.",
   },
   {
     id: 8,
     title: "YouTube Thumbnails",
     description:
-      "Bold and engaging thumbnails designed to improve visibility and audience attention.",
+      "Bold and attention-grabbing thumbnails designed to improve visibility, engagement, and click-through rates.",
   },
   {
     id: 9,
     title: "Website & UI Design",
     description:
-      "Modern and user-friendly interface designs for websites, landing pages, and digital products.",
+      "Clean and user-focused website interfaces designed with strong visual hierarchy, consistency, and usability.",
   },
 ];
 
