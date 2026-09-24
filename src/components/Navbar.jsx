@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FiArrowUpRight, FiMenu, FiX } from "react-icons/fi";
+import RekhaLogo from "../assets/rekha-logo.png";
 
 const navItems = [
   { name: "Home", link: "#home" },
@@ -25,9 +26,11 @@ const Navbar = () => {
           onClick={closeMenu}
           className="flex items-center gap-3"
         >
-          <span className="flex h-11 w-11 items-center justify-center rounded-full bg-[#ff563d] text-lg font-black text-black">
-            R
-          </span>
+          <img
+            src={RekhaLogo}
+            alt="Rekha Graphic Designer Logo"
+            className="h-11 w-11 object-contain"
+          />
 
           <span>
             <strong className="block text-sm tracking-[0.14em] text-white">
@@ -76,9 +79,8 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`overflow-hidden border-t border-white/10 bg-[#0a0a0a] transition-all duration-300 md:hidden ${
-          menuOpen ? "max-h-[450px] opacity-100" : "max-h-0 opacity-0"
-        }`}
+        className={`overflow-hidden border-t border-white/10 bg-[#0a0a0a] transition-all duration-300 md:hidden ${menuOpen ? "max-h-[450px] opacity-100" : "max-h-0 opacity-0"
+          }`}
       >
         <div className="flex flex-col gap-2 px-5 py-5">
           {navItems.map((item) => (

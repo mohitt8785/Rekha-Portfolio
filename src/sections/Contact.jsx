@@ -108,7 +108,7 @@ const Contact = () => {
               <div className="flex items-center gap-3">
                 <FiMapPin className="text-[#d8ff52]" />
 
-                <span className="text-sm">Mohali, Punjab</span>
+                <span className="text-sm">Chandigarh</span>
               </div>
 
               <div className="flex items-center gap-3">

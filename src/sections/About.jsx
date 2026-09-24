@@ -100,7 +100,7 @@ const About = () => {
 
             <div className="mt-8 inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-5 py-3 text-sm font-semibold">
               <FiMapPin className="text-[#d8ff52]" />
-              Mohali, Punjab
+              Chandigarh
             </div>
           </div>
 
@@ -138,7 +138,7 @@ const About = () => {
 
           <div className="border-b border-white/10 py-7 sm:border-b-0 sm:border-r sm:px-7">
             <strong className="text-4xl font-black text-[#ff563d]">
-              09
+              50+
             </strong>
             <p className="mt-2 text-sm text-gray-500">
               Professional design services

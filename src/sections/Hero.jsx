@@ -15,7 +15,7 @@ const Hero = () => {
         <div className="relative z-10">
           <div className="mb-6 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-[#d8ff52]">
             <span className="h-2 w-2 rounded-full bg-[#d8ff52]" />
-            Graphic Designer · Mohali
+            Chandigarh
           </div>
 
           <h1 className="text-[clamp(3.6rem,8vw,8rem)] font-black uppercase leading-[0.84] tracking-[-0.075em]">
@@ -73,7 +73,7 @@ const Hero = () => {
 
             <div>
               <strong className="block text-2xl font-black text-white">
-                09
+                50 +
               </strong>
               <span className="mt-1 block text-xs leading-5 text-gray-500">
                 Design services
@@ -114,7 +114,7 @@ const Hero = () => {
             </h2>
 
             <p className="relative z-10 text-xs font-black tracking-[0.14em]">
-              REKHA · 2026
+              REK- REKHA · 2026
             </p>
 
             {/* Background Letter */}

@@ -3,6 +3,7 @@ import {
   FiInstagram,
   FiLinkedin,
 } from "react-icons/fi";
+import RekhaLogo from "../assets/rekha-logo.png";
 
 const Footer = () => {
   return (
@@ -10,10 +11,11 @@ const Footer = () => {
       <div className="mx-auto flex max-w-[1500px] flex-col items-start justify-between gap-7 md:flex-row md:items-center">
         {/* Branding */}
         <a href="#home" className="flex items-center gap-3">
-          <span className="flex h-11 w-11 items-center justify-center rounded-full bg-[#ff563d] text-lg font-black text-black">
-            R
-          </span>
-
+           <img
+                      src={RekhaLogo}
+                      alt="Rekha Graphic Designer Logo"
+                      className="h-11 w-11 object-contain"
+                    />
           <span>
             <strong className="block text-sm tracking-[0.14em]">
               REKHA
@@ -42,7 +44,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="#"
+            href="https://www.linkedin.com/in/rekha-pal-4341a5313/"
             aria-label="LinkedIn"
             className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-gray-400 transition hover:-translate-y-1 hover:bg-white hover:text-black"
           >

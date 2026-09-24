@@ -58,11 +58,8 @@ export const services = [
 export const tools = [
   "Adobe Photoshop",
   "Adobe Illustrator",
-  "Adobe InDesign",
   "CorelDRAW",
-  "Figma",
   "Canva",
-  "After Effects",
 ];
 
 export const projects = [
