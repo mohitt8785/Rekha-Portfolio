@@ -30,12 +30,13 @@ const Portfolio = () => {
 
           <div>
             <p className="max-w-xl text-base leading-7 text-gray-400 sm:text-lg">
-              A selection of creative concepts across social media, branding,
-              packaging, posters, thumbnails, and UI design.
+              A selection of professional print, outdoor, event, and
+              public-awareness designs created for regional, corporate, and
+              government campaigns.
             </p>
 
-            <span className="mt-4 inline-flex rounded-full border border-[#ff563d]/30 bg-[#ff563d]/10 px-4 py-2 text-xs font-bold text-[#ff826f]">
-              Demo projects—real creatives will be added later
+            <span className="mt-4 inline-flex rounded-full border border-[#d8ff52]/20 bg-[#d8ff52]/5 px-4 py-2 text-xs font-bold text-[#d8ff52]">
+              Professional Campaign Work
             </span>
           </div>
         </div>

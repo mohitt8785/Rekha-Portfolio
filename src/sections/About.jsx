@@ -138,7 +138,7 @@ const About = () => {
 
           <div className="border-b border-white/10 py-7 sm:border-b-0 sm:border-r sm:px-7">
             <strong className="text-4xl font-black text-[#ff563d]">
-              50+
+              9+
             </strong>
             <p className="mt-2 text-sm text-gray-500">
               Professional design services

@@ -1,73 +1,49 @@
 import { FiArrowUpRight } from "react-icons/fi";
 
 const ProjectCard = ({ project }) => {
+  const cardSpan = project.featured
+    ? "md:col-span-2"
+    : project.wide
+      ? "md:col-span-2 lg:col-span-3"
+      : "";
+
+  const previewHeight = project.featured
+    ? "h-[430px] sm:h-[520px]"
+    : project.wide
+      ? "h-[350px] sm:h-[460px]"
+      : "h-[430px] sm:h-[500px]";
+
   return (
     <article
-      className={`group overflow-hidden border border-white/10 bg-[#111] ${
-        project.featured ? "md:col-span-2" : ""
-      }`}
+      className={`group overflow-hidden border border-white/10 bg-[#111] transition duration-300 hover:-translate-y-1 hover:border-white/25 ${cardSpan}`}
     >
-      {/* Project Preview */}
+      {/* Project Image */}
       <div
-        className={`relative overflow-hidden p-6 sm:p-8 ${
-          project.featured
-            ? "min-h-[390px] sm:min-h-[500px]"
-            : "min-h-[390px] sm:min-h-[460px]"
-        }`}
-        style={{
-          background: project.background,
-          color: project.foreground,
-        }}
+        className={`relative overflow-hidden bg-[#181818] ${previewHeight}`}
       >
-        {project.image ? (
-          <img
-            src={project.image}
-            alt={project.title}
-            className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"
-          />
-        ) : (
-          <>
-            {/* Decorative Circles */}
-            <div className="absolute -right-16 -top-16 h-56 w-56 rounded-full border border-current opacity-20" />
+        {/* Blurred Background */}
+        <img
+          src={project.image}
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 h-full w-full scale-110 object-cover opacity-20 blur-2xl"
+        />
 
-            <div className="absolute -bottom-20 -left-16 h-64 w-64 rounded-full border border-current opacity-20" />
+        {/* Main Design */}
+        <img
+          src={project.image}
+          alt={`${project.title} design by Rekha`}
+          loading="lazy"
+          className="relative z-10 h-full w-full object-contain p-3 transition duration-700 group-hover:scale-[1.025] sm:p-5"
+        />
 
-            <div className="absolute bottom-[18%] right-[8%] h-28 w-28 rotate-12 border border-current opacity-20" />
+        {/* Bottom Overlay */}
+        <div className="pointer-events-none absolute inset-0 z-20 bg-gradient-to-t from-black/40 via-transparent to-black/10" />
 
-            {/* Top Information */}
-            <div className="relative z-10 flex items-start justify-between">
-              <span className="text-xs font-black tracking-[0.18em]">
-                {project.label}
-              </span>
-
-              <span className="flex h-10 w-10 items-center justify-center rounded-full border border-current">
-                {project.number}
-              </span>
-            </div>
-
-            {/* Main Visual Text */}
-            <div className="absolute bottom-8 left-6 right-6 z-10 sm:bottom-10 sm:left-8 sm:right-8">
-              <p className="mb-3 text-xs font-black uppercase tracking-[0.2em] opacity-60">
-                Creative concept
-              </p>
-
-              <h3
-                className={`font-black leading-[0.86] tracking-[-0.06em] ${
-                  project.featured
-                    ? "max-w-3xl text-[clamp(3.5rem,8vw,7.5rem)]"
-                    : "text-[clamp(2.8rem,5vw,5rem)]"
-                }`}
-              >
-                {project.headline}
-              </h3>
-            </div>
-
-            {/* Large Background Number */}
-            <span className="absolute right-3 top-1/2 -translate-y-1/2 text-[12rem] font-black leading-none opacity-[0.05] sm:text-[17rem]">
-              {project.number}
-            </span>
-          </>
-        )}
+        {/* Project Number */}
+        <span className="absolute right-5 top-5 z-30 flex h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-black/60 text-xs font-black text-white backdrop-blur-md">
+          {project.number}
+        </span>
       </div>
 
       {/* Project Information */}
@@ -81,14 +57,26 @@ const ProjectCard = ({ project }) => {
             {project.title}
           </h3>
 
-          <p className="mt-3 max-w-xl text-sm leading-7 text-gray-400">
+          <p className="mt-3 max-w-2xl text-sm leading-7 text-gray-400">
             {project.description}
           </p>
+
+          {project.credit && (
+            <p className="mt-4 text-xs italic text-gray-500">
+              {project.credit}
+            </p>
+          )}
         </div>
 
-        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-white/15 text-white transition duration-300 group-hover:rotate-45 group-hover:bg-white group-hover:text-black">
+        <a
+          href={project.image}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`View ${project.title}`}
+          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-white/15 text-white transition duration-300 group-hover:rotate-45  group-hover:text-black"
+        >
           <FiArrowUpRight size={18} />
-        </span>
+        </a>
       </div>
     </article>
   );

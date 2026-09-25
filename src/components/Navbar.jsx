@@ -59,7 +59,7 @@ const Navbar = () => {
         {/* Desktop Button */}
         <a
           href="#contact"
-          className="hidden items-center gap-2 rounded-full border border-white px-5 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-black md:flex"
+          className="hidden items-center gap-2 rounded-full border border-white px-5 py-3 text-sm font-semibold text-white transition  hover:text-black md:flex  transition duration-300 hover:-translate-y-1 hover:border-[#d8ff52] "
         >
           Let&apos;s Talk
           <FiArrowUpRight />
